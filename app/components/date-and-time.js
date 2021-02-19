@@ -5,7 +5,7 @@ import { action } from '@ember/object';
 
 export default class DateAndTimeComponent extends Component {
     @tracked dateData = null;
-    @tracked timeData = null;
+    @tracked CETData = null;
     @tracked refreshCount = 0;
 
     constructor(){
@@ -14,8 +14,10 @@ export default class DateAndTimeComponent extends Component {
     }
 
     getDate(){
-        this.dateData = Date();
+        this.dateData = new Date().toLocaleString();
+        this.CETData = new Date(new Date().toLocaleString("en-us",{timeZone: "Europe/Paris"})).toLocaleString();
     }
+
 
     @action
     refreshTime(){
