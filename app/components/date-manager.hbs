@@ -1,0 +1,19 @@
+<div>
+    <h1>Date and Time Assignment
+     <div data-test-name>
+            {{this.currentName}}
+        </div>
+    </h1>
+    Name:
+    <input 
+        data-test-name 
+        type="textarea" 
+        value={{this.currentName}} 
+        oninput={{this.changedName}}
+    >
+
+    <DateAndTime @name={{this.currentName}}>
+        
+    </DateAndTime>
+
+</div>
