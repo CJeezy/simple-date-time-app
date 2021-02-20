@@ -5,6 +5,7 @@ import { action } from '@ember/object';
 
 export default class DateAndTimeComponent extends Component {
     @tracked dateData = null;
+    //CET Central European Time
     @tracked CETData = null;
     @tracked refreshCount = 0;
 
