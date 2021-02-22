@@ -1,7 +1,7 @@
 # date-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This simple website displays the date and time at your current location, as well as the current date and time
+in Paris, France. It also displays a refresh button that refreshes the the time for both locations.
 
 ## Prerequisites
 
